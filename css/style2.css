@@ -237,6 +237,28 @@ footer p:nth-child(2){
     grid-column: 2 / 3;
 }
 
+.scale:hover{
+    transform: scale(1.1);
+    cursor: pointer
+}
+
+.botonera ul li a{
+
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(currentcolor, currentcolor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.botonera ul li a:hover{
+    color: #f9004d;
+    font-weight: 600;
+    background-size: 100% 2px;
+}
+
 @media all and (max-width:480px){
     .contenedor-grid{
         grid-template-columns: 90%;
@@ -255,3 +277,6 @@ footer p:nth-child(2){
     }
 
 }
+
+/* animaciones */
+
