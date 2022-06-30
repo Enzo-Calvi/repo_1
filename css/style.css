@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 62.5%;
+}
+
+@media only screen and (min-width:480px){
+
+    nav{
+    background-color: #101010;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        }
+    nav ul li{
+        font-size: 3rem;
+        justify-content: space-around;
+        margin-right: 2rem;
+    }
+    
+    nav ul li a{
+            color: white;
+            text-decoration: none;
+            justify-content: space-around;
+            }
+
+        }
+
+
+h1{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 1rem;
+}
+section p{
+    color: black;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 500;
+    text-align: left;
+    width: 40%;
+    margin: 1rem;
+    }
+
+section iframe{
+    margin: 1rem;
+}
+
+body{
+    background-image: url(../img/fondo3.jpg);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+section figure{
+    text-align: center;
+}
+
+section figcaption {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+section figure p{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-left: 25rem;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2){
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* selectores de clases */
+
+.contacto__section{
+    width: 40%;
+    height: auto;
+    background-color: #ffffff;
+    border: solid 2px black;
+    margin: 1rem;
+}
+
+.promociones__invernales{
+    width: 180px;
+    height: auto;
+    background-color: antiquewhite;
+    margin: 3rem;
+}
+
+.lobby__img--fluid{
+    width: 100%;
+    height: 60rem;
+}
+
+.milo_img-fluid{
+    width: 40%;
+    height: 70rem;
+    margin: 1rem;
+}
+
+.productos__img--fluid{
+    width: 90%;
+    height: 70rem;
+    margin: 1rem;
+}
+
+.container{
+    display: flex;
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    margin: 22x 10px;
+    color: white;
+}
+
+.end{
+    position: absolute;
+    color: #f9004d;
+    bottom: 5px;
+    font-size: 14px;
+}
+
+.section-grid{
+    justify-content: space-between;
+}
+
+#contenedor-grid{
+    display: grid;
+    grid-template-columns: 45vw 10vw 45vw;
+    grid-template-rows: 20vh 50vh 30vh;
+    grid-template-areas: "nav nav nav" "header header header" "main map map";
+}
+
+.mainnav{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.map{
+    grid-area: map;
+}
