@@ -1,0 +1,27 @@
+footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: map-get($map: $paleta, $key: "negro");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color:map-get($map: $paleta, $key: "blanco");
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2){
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+    color: map-get($map: $paleta, $key: "blanco");
+    margin-bottom: 20px;
+    font-weight: bold;
+}

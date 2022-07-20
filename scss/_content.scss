@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/fondo3.jpg);
+    display: grid;
+}
+
+$paleta:(
+    "blanco": white,
+    "negro": black,
+    "rosa": #f9004d,
+    "crema": antiquewhite,
+);
+
+@mixin texto($size){
+    font-size: $size;
+    padding: 2px
+}

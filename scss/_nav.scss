@@ -1,0 +1,36 @@
+nav{
+    background-color: map-get($map: $paleta, $key: "negro");
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    }
+
+nav ul li{
+    font-size: 3rem;
+    justify-content: space-around;
+    margin-right: 2rem;
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a{
+    color: map-get($map: $paleta, $key: "blanco");
+    text-decoration: none;
+    font-weight: 400;
+
+}
+nav ul li a:hover{
+    color: map-get($map: $paleta, $key: "rosa");
+    transition: .4s;
+}

@@ -1,0 +1,15 @@
+header{
+    display: grid;
+}
+
+header h1{
+    @extend .encabezado;
+    margin: 20px 0px 20px;
+    font-size: 60px;
+}
+
+header h2{
+    color: map-get($map: $paleta, $key: "rosa");
+    letter-spacing: 2px;
+    @include texto(40px)
+}
