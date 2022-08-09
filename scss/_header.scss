@@ -1,11 +1,12 @@
 header{
-    display: grid;
+    display: flex;
 }
 
 header h1{
     @extend .encabezado;
     margin: 20px 0px 20px;
     font-size: 60px;
+    padding: 10px
 }
 
 header h2{

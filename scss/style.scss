@@ -8,22 +8,14 @@
 @import "_class";
 
 @media all and (max-width:480px){
-    .contenedor-grid{
-        grid-template-columns: 90%;
-    }
-    .three{
-        grid-column: 1 / 4;
-    }
-    .four{
-        grid-column: 1 / 4;
-    }
-    .nav{
-        flex-direction: column;
-    }
     nav li a{
+        font-size: 1.7rem;
+    }
+    header h1{
+        font-size: 1.7rem;
+    }
+    header h2{
         font-size: 1.7rem;
     }
 
 }
-
-$secondaryColor: blue
